@@ -51,3 +51,85 @@ body {
   font-weight: 400;
   font-style: italic;
 }
+
+/* ----------------------- COMMON  ------------------------------ */
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background: #171100;
+  border-radius: 24.5px;
+}
+
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+  /* Thiết lập lề bên trái và phải tự động, giúp phần tử căn giữa trong container */
+}
+
+/* -----------------------  HEADER  ----------------------------- */
+.header {
+  background: #fffcf4;
+}
+.header.fixed {
+  position: sticky;
+}
+
+.header .body-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+}
+
+.nav li.active a,
+.nav a:hover {
+  color: #171100;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+/* thêm phần tử vào sau thẻ a  */
+.nav li.active a::after {
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
+}
+
+.header .btn-sign-up {
+  min-width: 144px;
+}
+
+.header .action {
+  margin-left: 49px;
+}
